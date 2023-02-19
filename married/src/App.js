@@ -14,7 +14,7 @@ function App() {
 				<WeddingDay />
 				<Welcome />
 				<Pictures />
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		</div>
 	);

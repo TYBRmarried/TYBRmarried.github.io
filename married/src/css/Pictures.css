@@ -1,0 +1,20 @@
+.pictures {
+    background-color: #bcd8db;
+}
+
+.pictures .col {
+    display: flex;
+    flex: 0 0 auto;
+    width: 49%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.pictures .col:nth-child(2n) {
+    margin-right: 0;
+}
+
+.pictures img {
+    width: 100%;
+    object-fit: contain;
+}

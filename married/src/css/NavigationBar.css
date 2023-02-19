@@ -1,0 +1,10 @@
+.navigation-bar {
+    margin-bottom: 30px;
+    /* background-color: #4e9a98; */
+    background-color: #1e2c42;
+    color: #fff;
+}
+
+.navigation-bar .pipe {
+    flex: 0 0 auto;
+}

@@ -1,3 +1,9 @@
+@import url('https://webfontworld.github.io/kopus/KoPubWorldBatang.css');
+
+body {
+  font-family: "KoPubWorldBatang";
+}
+
 .container {
   max-width: 540px;
   width: 100%;
@@ -18,4 +24,10 @@
 
 .text {
   word-wrap: normal;
+}
+
+.wedding-day {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
 }

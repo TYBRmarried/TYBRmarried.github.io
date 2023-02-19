@@ -11,7 +11,7 @@ export default function WeddingDay() {
     }, []);
 
     return (
-        <div id="wedding-day">
+        <div className="wedding-day">
             {`Wedding Day - ${wDay}`}
         </div>
     );

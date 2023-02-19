@@ -1,3 +1,10 @@
 .welcome img {
     max-width: 100%;
 }
+
+.welcome .text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 4px solid #bcd8db;
+    border-bottom: 4px solid #bcd8db;
+}
