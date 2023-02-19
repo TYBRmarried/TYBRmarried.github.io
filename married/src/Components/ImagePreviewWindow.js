@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import ImageGallery from 'react-image-gallery';
 import ReactModal from 'react-modal';
 import "../css/ImagePreviewWindow.css";
