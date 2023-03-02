@@ -19,14 +19,17 @@
     top: 3.5%;
     z-index: 10;
     width: 7%;
+    justify-content: right;
 }
 
 .image-preview .close img {
-    width:100%
+    width:100%;
+    max-width: 50px;
 }
 
 .image-preview .close img:hover {
     width: 110%;
+    max-width: 55px;
 }
 
 .ReactModal__Content {

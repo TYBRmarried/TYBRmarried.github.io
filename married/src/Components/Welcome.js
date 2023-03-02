@@ -1,14 +1,9 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "../css/Welcome.css"
+import { getRandomInt } from "../common";
 
 export default function Welcome() {
-    const getRandomInt = (min, max) => {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
-    }
-
     return (
         <Row className="welcome">
             <img src={`${process.env.PUBLIC_URL}/${getRandomInt(1, process.env.REACT_APP_IMAGE_COUNT)}.jpg`} alt="" />

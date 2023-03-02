@@ -1,5 +1,9 @@
 @import url('https://webfontworld.github.io/kopus/KoPubWorldBatang.css');
 
+html {
+  background-color: #bcd8db;
+}
+
 body {
   font-family: "KoPubWorldBatang";
 }
