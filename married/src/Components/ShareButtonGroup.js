@@ -30,7 +30,7 @@ const ShareButtonGroup = () => {
                 content: {
                     title: '보라태용결혼하는거제목어떻게넣을까요',
                     description: '#어떤 #내용을넣는게 #좋을까요',
-                    imageUrl: `${process.env.PUBLIC_URL}/${getRandomInt(1, process.env.REACT_APP_IMAGE_COUNT)}.png`,
+                    imageUrl: `https://tybrmarried.github.io/${getRandomInt(1, process.env.REACT_APP_IMAGE_COUNT)}.png`,
                     link: {
                         mobileWebUrl: "https://tybrmarried.github.io",
                         webUrl: "https://tybrmarried.github.io",
