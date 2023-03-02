@@ -30,7 +30,7 @@ const ShareButtonGroup = () => {
                 content: {
                     title: '보라태용결혼하는거제목어떻게넣을까요',
                     description: '#어떤 #내용을넣는게 #좋을까요',
-                    imageUrl: `${process.env.PUBLIC_URL}/${getRandomInt(1, process.env.REACT_APP_IMAGE_COUNT)}.jpg`,
+                    imageUrl: `${process.env.PUBLIC_URL}/${getRandomInt(1, process.env.REACT_APP_IMAGE_COUNT)}.png`,
                     link: {
                         mobileWebUrl: "https://tybrmarried.github.io",
                         webUrl: "https://tybrmarried.github.io",
@@ -51,14 +51,18 @@ const ShareButtonGroup = () => {
 
     return (
         <div className="button-group">
-            <div className="kakao-share" onClick={shareKakao}>
-                <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
-                    alt="카카오톡 공유 보내기 버튼" />
+            <div className="kakao-share">
+                <img
+                    src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+                    alt="카카오톡 공유 보내기 버튼" onClick={shareKakao}
+                />
             </div>
-            <div className="default-share" onClick={shareDefault}>
-                <div>
-                    <img src={`${process.env.PUBLIC_URL}/icon_share.png`}
-                        alt="공유 보내기 버튼" />
+            <div className="default-share" >
+                <div onClick={shareDefault}>
+                    <img
+                        src={`${process.env.PUBLIC_URL}/icon_share.png`}
+                        alt="공유 보내기 버튼"
+                    />
                 </div>
             </div>
         </div>
