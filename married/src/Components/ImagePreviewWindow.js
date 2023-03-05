@@ -35,6 +35,7 @@ export default function ImagePreviewWindow(props) {
                     showFullscreenButton={false}
                     showThumbnails={true}
 					thumbnailPosition={"bottom"}
+                    startIndex={props.index || 0}
                 />
             </div>
         </ReactModal>

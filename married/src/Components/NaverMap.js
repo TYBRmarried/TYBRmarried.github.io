@@ -32,7 +32,8 @@ const NaverMap = () => {
         const marker = new naver.maps.Marker(markerOptions);
         const contentString = [
             '<div class="" style="text-align: center;">',
-            '   <h3>수원 더 아리엘</h3>',
+            '   <div>공연장 찾아오시는 길</div>',
+            '   <div><bold>수원 더 아리엘</bold> 6층 스카이 가든</div>',
             '   <p>경기도 수원시 팔달구 중부대로 181<br />',
             '       <img src="'+ process.env.PUBLIC_URL + '/그룹_임시.png" width="55" height="55" /><br />',
             '       02-120 | 공공,사회기관 &gt; 특별,광역시청<br />',
@@ -43,7 +44,7 @@ const NaverMap = () => {
 
         const infowindow = new naver.maps.InfoWindow({
             content: contentString,
-            maxWidth: 200,
+            maxWidth: 300,
             backgroundColor: "#fff",
             borderColor: "#bcd8db",
             borderWidth: 2,

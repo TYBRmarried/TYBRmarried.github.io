@@ -1,14 +1,15 @@
 .button-group {
-    position: sticky;
+    position: fixed;
     bottom: 20px;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap; /* 줄바꿈을 위해 flex-wrap 추가 */
     z-index: 100;
+    width: 50px;
+    right: 3%;
 }
 
 .button-group > div {
-    flex-basis: 100%;
-    display: flex;
+    display: inline-flex;
 }
 
 .button-group > .kakao-share {
@@ -18,7 +19,6 @@
 .button-group > .kakao-share,
 .button-group > .default-share {
     justify-content: end;
-    margin-right: 5%;
 }
 
 .button-group > .kakao-share > img {
