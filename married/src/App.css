@@ -39,6 +39,17 @@ body {
   font-weight: 700;
 }
 
+.sub-title {
+  color: #1e2c42;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #bcd8db;
+  display: inline-block;
+  width: 50%;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .d-flex {
   display: flex;
 }

@@ -12,7 +12,11 @@ export default function WeddingDay() {
 
     return (
         <div className="wedding-day">
-            {`Wedding Day - ${wDay}`}
+            태용 <span style={{color: "red"}}>❤</span> 보라
+            <br />
+            {`Wedding Day`}
+            <br />
+            {`D - ${wDay}`}
         </div>
     );
 };

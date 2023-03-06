@@ -3,8 +3,8 @@ import { CSSTransition } from 'react-transition-group';
 import "../css/Accordion.css";
 // import './Accordion.css';
 
-function Accordion({ title, content, className }) {
-	const [isOpen, setIsOpen] = useState(false);
+function Accordion({ title, content, className, open }) {
+	const [isOpen, setIsOpen] = useState(open);
 
 	const handleClick = () => {
 		setIsOpen(!isOpen);
@@ -12,7 +12,7 @@ function Accordion({ title, content, className }) {
 
 	return (
 		<div className={`accordion ${className}`}>
-			<div className="title" onClick={handleClick}>
+			<div className="title sub-title" onClick={handleClick}>
 				{title}
 			</div>
 			<CSSTransition

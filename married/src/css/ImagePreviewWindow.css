@@ -1,6 +1,6 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-.image-preview .close {
+.ReactModal__Content .close {
     transition: all .3s ease-out;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -12,7 +12,7 @@
     filter: drop-shadow(0 2px 2px #1a1a1a);
 }
 
-.image-preview .close {
+.ReactModal__Content .close {
     display: flex;
     position: absolute;
     right: 3.5%;
@@ -22,12 +22,12 @@
     justify-content: right;
 }
 
-.image-preview .close img {
+.ReactModal__Content .close img {
     width:100%;
     max-width: 50px;
 }
 
-.image-preview .close img:hover {
+.ReactModal__Content .close img:hover {
     width: 110%;
     max-width: 55px;
 }

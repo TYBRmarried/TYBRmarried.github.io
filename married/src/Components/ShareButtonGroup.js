@@ -6,7 +6,7 @@ const ShareButtonGroup = () => {
     const shareDefault = async () => {
         const url = 'https://tybrmarried.github.io';
         const title = '태용 ❤ 보라';
-        const description = '이태용, 김보라의 사랑 이야기의 새로운 한 장면을 함께 해주세요.';
+        const description = '사랑 이야기의 새로운 한 장면을 함께 해주세요.';
 
         try {
             await navigator.share({
@@ -29,7 +29,7 @@ const ShareButtonGroup = () => {
                 objectType: 'feed',
                 content: {
                     title: '태용 ❤ 보라',
-                    description: '이태용, 김보라의 사랑 이야기의 새로운 한 장면을 함께 해주세요.',
+                    description: '사랑 이야기의 새로운 한 장면을 함께 해주세요.',
                     imageUrl: `https://tybrmarried.github.io/${getRandomInt(1, process.env.REACT_APP_IMAGE_COUNT)}.png`,
                     link: {
                         mobileWebUrl: "https://tybrmarried.github.io",

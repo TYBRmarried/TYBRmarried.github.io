@@ -18,14 +18,17 @@ export default function Pictures() {
     };
 
     return (
-        <Row className="pictures">
-            {state.show &&
-                <ImagePreviewWindow
-                    index={state.index}
-                    onCancel={() => setState({ ...state, index: -1, show: false })}
-                />
-            }
-            {createPicture()}
-        </Row>
+        <div className="pictures">
+            <div className="sub-title">갤러리</div>
+            <Row>
+                {state.show &&
+                    <ImagePreviewWindow
+                        index={state.index}
+                        onCancel={() => setState({ ...state, index: -1, show: false })}
+                    />
+                }
+                {createPicture()}
+            </Row>
+        </div>
     );
 };

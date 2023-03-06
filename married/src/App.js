@@ -4,6 +4,7 @@ import './App.css';
 import NavigationBar from './Components/NavigationBar';
 import WeddingDay from './Components/WeddingDay';
 import Welcome from './Components/Welcome';
+import Calendar from './Components/Calendar';
 import Pictures from './Components/Pictures';
 import NaverMap from './Components/NaverMap';
 import CoupleInfo from './Components/CoupleInfo';
@@ -17,6 +18,7 @@ function App() {
 				<NavigationBar />
 				<WeddingDay />
 				<Welcome />
+				<Calendar />
 				<Pictures />
 				<NaverMap />		
 				<CoupleInfo />

@@ -1,0 +1,58 @@
+.copy-confirm-window .default {
+    border: solid 0px;
+    border-top: solid 6px #4270e0;
+    max-width: 451px;
+    width: 75%;
+    height: 289px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.copy-confirm-window .content {
+    display: flex;
+    height: 100%;
+}
+
+.copy-confirm-window .custom-modal-content {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copy-confirm-window .custom-modal-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-confirm-window .custom-modal-header {
+    /* display: inline-flex; */
+    /* justify-content: center; */
+    margin-top: 10px;
+    height: 35px;
+}
+
+.copy-confirm-window .custom-modal-body {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 15px;
+    height: 37px;
+}
+
+.copy-confirm-window .custom-modal-footer {
+    margin-top: 25px;
+}
+
+.copy-confirm-window .confirm {
+    max-width: 200px;
+    width: 70%;
+    height: 34px;
+    border-radius: 4px;
+    border: solid 0px;
+    background-color: #4270e0;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+}

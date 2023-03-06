@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/CoupleInfo.css";
 import Accordion from "./Accordion";
 import { Row, Col } from "react-bootstrap";
+import { copyToClipboard } from "../common";
+import CopyConfirmWindow from "./CopyConfirmWindow";
 
 const contactInfos = [
     ["", "신랑", "이태용", "010-6774-8959"],
@@ -22,6 +24,11 @@ const accountInfos = [
 ];
 
 const CoupleInfo = () => {
+    const [state, setState] = useState({
+        copyTargetText : "",
+        show: false,
+    });
+
     const createInfo = (contactInfo) => {
         return (
             <Row>
@@ -42,7 +49,16 @@ const CoupleInfo = () => {
                     </Row>
                 </Col>
                 <Col className="col-6">{contactInfo[3]}</Col>
-                <Col className="col-2">복사하기</Col>
+                <Col className="col-2">
+                    <img
+                        src={`${process.env.PUBLIC_URL}/copy_icon.png`}
+                        alt="" 
+                        onClick={() => {
+                            copyToClipboard(contactInfo[3])
+                            setState({ ...state, copyTargetText: contactInfo[3], show: true });
+                        }}
+                    />
+                </Col>
             </Row>
         );
     };
@@ -55,14 +71,17 @@ const CoupleInfo = () => {
 
     return (
         <div className="couple-info">
+            {state.show && <CopyConfirmWindow copyTargetText={state.copyTargetText} onConfirm={() => setState({ ...state, copyTargetText: "", show: false })} />}
             <Accordion
+                open={true}
                 className="contact"
                 title={"연락처"}
                 content={createAccordionContent(contactInfos)}
             />
             <Accordion
+                open={false}
                 className="account"
-                title={"신랑 신부에게 마음 전하기"}
+                title={"마음 전하기"}
                 content={createAccordionContent(accountInfos)}
             />
         </div>

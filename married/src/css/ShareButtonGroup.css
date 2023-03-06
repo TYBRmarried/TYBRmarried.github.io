@@ -3,7 +3,7 @@
     bottom: 20px;
     display: inline-flex;
     flex-wrap: wrap; /* 줄바꿈을 위해 flex-wrap 추가 */
-    z-index: 100;
+    z-index: 101;
     width: 50px;
     right: 3%;
 }
