@@ -12,11 +12,11 @@ export default function WeddingDay() {
 
     return (
         <div className="wedding-day">
-            태용 <span style={{color: "red"}}>❤</span> 보라
-            <br />
-            {`Wedding Day`}
-            <br />
-            {`D - ${wDay}`}
+            <div style={{ lineHeight: "0.5" }}>태용 <span style={{ color: "red" }}>❤</span> 보라</div>
+            {/* <br /> */}
+            <span style={{ color: "#bcd8db", fontSize: "12px" }}>{`Wedding Day`}</span>
+            {/* <br /> */}
+            <div style={{ lineHeight: "1" }}>{`D - ${wDay}`}</div>
         </div>
     );
 };

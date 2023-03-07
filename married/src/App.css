@@ -33,7 +33,7 @@ body {
 }
 
 .wedding-day {
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
@@ -45,7 +45,8 @@ body {
   border-bottom: 1px solid #bcd8db;
   display: inline-block;
   width: 50%;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
 }
