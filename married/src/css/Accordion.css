@@ -34,20 +34,30 @@
 	position: relative;
 }
 
+.accordion .icon-empty {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transform: rotate(135deg);
+	display: inline-block;
+	margin-right: 15px;
+}
+
 .accordion .icon {
-    position: absolute;
-    left: calc(50% + 60px);
-    top: 12%;
     content: '';
     width: 10px;
     height: 10px;
     border-top: 2px solid #bcd8db;
     border-right: 2px solid #bcd8db;
-    transform: rotate(135deg);
+    transform: rotate(135deg) translate(-3px, 3px);
+	display: inline-block;
+	margin-left: 15px;
 }
 
 .accordion .icon.open {
-	transform: rotate(315deg);
+	transform: rotate(315deg) translate(-3px, 3px);
 	top: 30%;
 }
 
@@ -58,6 +68,9 @@
 .accordion .content img {
 	width: 50px;
 	height: 50px;
+}
+
+.accordion .content img.copy {
 	cursor: pointer;
 }
 

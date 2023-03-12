@@ -13,6 +13,9 @@ function Accordion({ title, content, className, open }) {
 	return (
 		<div className={`accordion ${className}`}>
 			<div className="title sub-title" onClick={handleClick}>
+				{className === "account" &&
+					<div className={`icon-empty ${isOpen ? "open" : ""}`}></div>
+				}
 				{title}
 				{className === "account" &&
 					<div className={`icon ${isOpen ? "open" : ""}`}></div>

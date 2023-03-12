@@ -37,7 +37,6 @@ const CoupleInfo = () => {
                         <img src={`${process.env.PUBLIC_URL}/${contactInfo[0]}`} alt="" />
                     </div>
                 </Col>
-
                 <Col className="col-2">
                     <Row>
                         <Col>
@@ -53,6 +52,7 @@ const CoupleInfo = () => {
                 <Col className="col-6">{contactInfo[3]}</Col>
                 <Col className="col-2">
                     <img
+                        className="copy"
                         src={`${process.env.PUBLIC_URL}/copy_icon.png`}
                         alt="" 
                         onClick={() => {
