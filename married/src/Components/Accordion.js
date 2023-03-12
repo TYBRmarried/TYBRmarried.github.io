@@ -7,7 +7,9 @@ function Accordion({ title, content, className, open }) {
 	const [isOpen, setIsOpen] = useState(open);
 
 	const handleClick = () => {
-		setIsOpen(!isOpen);
+		if (className === "account") {
+			setIsOpen(!isOpen);
+		}
 	};
 
 	return (
