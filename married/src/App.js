@@ -9,7 +9,7 @@ import Pictures from './Components/Pictures';
 import NaverMap from './Components/NaverMap';
 import CoupleInfo from './Components/CoupleInfo';
 import ShareButtonGroup from './Components/ShareButtonGroup';
-// import Footer from './Components/Footer';
+import Footer from './Components/Footer';
 
 function App() {
 	return (
@@ -23,8 +23,8 @@ function App() {
 				<NaverMap />		
 				<CoupleInfo />
 				<ShareButtonGroup />
-				{/* <Footer /> */}
-				<div style={{height: "100px"}}></div>
+				<Footer />
+				{/* <div style={{height: "100px"}}></div> */}
 			</div>
 		</div>
 	);

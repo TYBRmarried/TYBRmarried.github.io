@@ -27,12 +27,12 @@ export default function CopyConfirmWindow(props) {
                 </div>
             </div>
             <div className="custom-modal-footer">
-                <button
+                <div
                     className={"confirm"}
                     onClick={props.onConfirm}
                 >
                     확인
-                </button>
+                </div>
             </div>
         </ReactModal>
     );

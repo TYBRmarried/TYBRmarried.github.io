@@ -13,7 +13,7 @@ const NaverMap = () => {
         const mapOptions = {
             center: location,
             zoom: 17,
-            zoomControl: true,
+            zoomControl: false,
             zoomControlOptions: {
                 position: naver.maps.Position.TOP_RIGHT,
             },
@@ -24,10 +24,9 @@ const NaverMap = () => {
             position: location.destinationPoint(90, 15),
             map: map,
             icon: {
-                url: process.env.PUBLIC_URL + `/그룹_임시.png`,
-                size: new naver.maps.Size(50, 52),
-                origin: new naver.maps.Point(0, 0),
-                anchor: new naver.maps.Point(25, 26)
+                url: process.env.PUBLIC_URL + `/marker.png`,
+                size: new naver.maps.Size(50, 50),
+                scaledSize: new naver.maps.Size(50, 50),
             }
         };
         const marker = new naver.maps.Marker(markerOptions);

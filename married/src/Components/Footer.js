@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <Row className="footer">
             <Col>
-                태용 ❤ 보라
+                Made by TY ❤ BR
             </Col>
         </Row>
     );

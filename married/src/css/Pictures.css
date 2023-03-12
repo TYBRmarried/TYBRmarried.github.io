@@ -17,5 +17,9 @@
 
 .pictures img {
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
+
+/* .pictures img.wide-image {
+    object-fit: contain;
+} */

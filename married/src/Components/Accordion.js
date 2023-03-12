@@ -14,6 +14,9 @@ function Accordion({ title, content, className, open }) {
 		<div className={`accordion ${className}`}>
 			<div className="title sub-title" onClick={handleClick}>
 				{title}
+				{className === "account" &&
+					<div className={`icon ${isOpen ? "open" : ""}`}></div>
+				}
 			</div>
 			<CSSTransition
 				in={isOpen}

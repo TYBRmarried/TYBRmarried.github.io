@@ -30,6 +30,27 @@
 	cursor: pointer;
 }
 
+.accordion.account .sub-title {
+	position: relative;
+}
+
+.accordion .icon {
+    position: absolute;
+    left: calc(50% + 60px);
+    top: 12%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #bcd8db;
+    border-right: 2px solid #bcd8db;
+    transform: rotate(135deg);
+}
+
+.accordion .icon.open {
+	transform: rotate(315deg);
+	top: 30%;
+}
+
 .accordion .content {
 	margin-bottom: 30px;
 }
